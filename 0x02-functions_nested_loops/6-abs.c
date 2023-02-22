@@ -13,7 +13,7 @@ int _abs(int n)
 	{
 		int abs;
 
-		abs = n * -1
+		abs = n * -1;
 
 		return (abs);
 	}
