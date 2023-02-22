@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * print_last_digit - prints the last digit of number
+ * @n: number whose last digit is to be printed
+ *
+ * Return: is n % 10
+ */
+
+int print_last_digit(int n)
+{
+	return (n % 10);
+}
