@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * print_diagnol - draws a straight line in the terminal
+ * print_diagonal - draws a straight line in the terminal
  * @n: number of times n should be printed
  *
- * Return: is 0
+ * Return: is void
  */
-
-void print_diagnol(int n)
+void print_diagonal(int n)
 {
 	int x, y;
 
@@ -23,6 +22,7 @@ void print_diagnol(int n)
 			{
 				_putchar(32);
 			}
+
 			_putchar(92);
 			_putchar('\n');
 		}
