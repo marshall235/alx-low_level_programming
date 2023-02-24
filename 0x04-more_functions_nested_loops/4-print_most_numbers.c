@@ -5,21 +5,19 @@
  *
  * Return: is void
  */
-
 void print_most_numbers(void)
 {
-	int n;
+	int x = 0;
 
-	for (n = 48; n <= 57; n++)
+	for (; x <= 9; x++)
 	{
-		if (n == 2 || n == 4)
+		if (x == 2 || x == 4)
 		{
 			continue;
 		}
-
 		else
 		{
-			_putchar(n);
+			_putchar(x + '0');
 		}
 	}
 
