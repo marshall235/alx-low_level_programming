@@ -3,7 +3,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: string variable
- * Return: 0
+ * Return: length of the string
  */
 int _strlen(char *s)
 {
@@ -16,5 +16,5 @@ int _strlen(char *s)
 		pl = s[i++);
 	}
 
-	return (0);
+	return (sum);
 }
