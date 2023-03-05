@@ -19,7 +19,7 @@ char *leet(char *s)
 		{
 			if (*(s + i) == *(l + j))
 			{
-				*s(s + i) = *(d + j);
+				*(s + i) = *(d + j);
 			}
 		}
 	}
