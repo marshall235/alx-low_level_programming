@@ -12,7 +12,7 @@ char *cap_string(char *n)
 
 	char *nc = ",;.!?(){}\n\t\" ";
 
-	for (i = 0; *(n + 1) != '\0'; i++)
+	for (i = 0; *(n + i) != '\0'; i++)
 	{
 		if (i == 0 && *(n + i) >= 'a' && *(n + i) <= 'z')
 			n[i] -= 32;
