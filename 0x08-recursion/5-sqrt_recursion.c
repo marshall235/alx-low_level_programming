@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural square root of n
- * @n: number whose square root is to be returned
- * Return: square root of n
+ * _sqrt_recursion - return the natural square root of a number
+ * @n: int number
+ * Return: If no natural square root, return -1. Else return natural
+ * square root
  */
 
 int _sqrt_recursion(int n)
@@ -18,19 +19,15 @@ int _sqrt_recursion(int n)
  * Return: square root if natural square root, or -1 if none found
  */
 
-
-
 int _sqrt(int c, int i)
 {
 	int square;
 
 	square = i * i;
-
 	if (square == c)
 		return (i);
 	else if (square < c)
 		return (_sqrt(c, i + 1));
-
 	else
-		return (-1)
+		return (-1);
 }
