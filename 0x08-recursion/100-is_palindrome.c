@@ -8,11 +8,11 @@
 
 int is_palindrome(char *s)
 {
-	if (*s == '\0')
-		return
-			(1);
-	else
-		return (1 + get_length(++S));
+	int length;
+
+	length = get_length(s) - 1;
+
+	return (my_pal(s, --length));
 }
 
 
