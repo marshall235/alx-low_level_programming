@@ -1,9 +1,9 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * is_palindrome - returns 1 if a string is a palindrome 0 if not
- * @s: Pointer to the string to be returned
- * Return: 1 if success 0 otherwise
+ * is_palindrome - check if a string is a palindrome
+ * @s: char array string
+ * Return: 1 if palindrome, 0 if not
  */
 
 int is_palindrome(char *s)
@@ -14,7 +14,6 @@ int is_palindrome(char *s)
 
 	return (my_pal(s, --length));
 }
-
 
 /**
  * get_length - gets length of string
@@ -31,12 +30,11 @@ int get_length(char *s)
 }
 
 /**
- * my_pal - recursive check if palindrome
+ * my_pal - recursive check of palindrome
  * @s: string
  * @l: length of string
- * Return: 1 if plaindrome, 0 if not
+ * Return: 1 if palindrome, 0 if not
  */
-
 
 int my_pal(char *s, int l)
 {
@@ -45,7 +43,7 @@ int my_pal(char *s, int l)
 		if (l <= 0)
 			return (1);
 		else
-			return (my_pal(++S, l - 2));
+			return (my_pal(++s, l - 2));
 	}
 	else
 		return (0);
