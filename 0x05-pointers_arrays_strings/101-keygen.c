@@ -3,10 +3,9 @@
 #include <time.h>
 
 /**
- * main - generates random valid passwords for the program
- *	101-crackme.
- * Return: 0
- */
+ * main - main body
+ * Return: All good
+*/
 
 int main(void)
 {
@@ -15,7 +14,7 @@ int main(void)
 	int total;
 
 	srand(time(NULL));
-	for (count = 0, total = 2772, total > 122; count++)
+	for (count = 0, total = 2772; total > 122; count++)
 	{
 		myrand = (rand() % 127);
 		printf("%c", myrand);
